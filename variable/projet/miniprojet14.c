@@ -24,7 +24,7 @@ int main() {
 
         switch(opt) {
             case 1:
-                if (stock < max) {
+               
                     printf("Entrer le titre du livre: ");
                     scanf("%s", titre[stock]);
 
@@ -39,9 +39,7 @@ int main() {
 
                     stock++;
                     printf("Livre ajouté avec succès !\n");
-                } else {
-                    printf("Stock plein, impossible d'ajouter plus de livres.\n");
-                }
+             
                 break;
 
             case 2:
@@ -102,7 +100,7 @@ int main() {
             case 5: {
                 char recherche[30];
                 printf("Entrez le titre du livre à supprimer: ");
-                scanf("%s", recherche);
+                scanf("%s", &recherche);
 
                 int found = 0;
                 for (int i = 0; i < stock; i++) {
